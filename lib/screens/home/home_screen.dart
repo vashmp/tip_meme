@@ -66,7 +66,9 @@ class HomeScreen extends StatelessWidget {
                 height: 50,
                 child: ElevatedButton(
                   style: buttonStyle(),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/customTip');
+                  },
                   child: const Text(
                     'Custom',
                     style: TextStyle(fontSize: 25, color: Colors.white),
